@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'guestbook.apps.GuestbookConfig',
     'account.apps.AccountConfig',    
     'dictionary.apps.DictionaryConfig',
     'hello.apps.HelloConfig',
@@ -128,3 +129,4 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
+LOGIN_REQUIRED = 'login'
